@@ -17,7 +17,7 @@ class Project:
         employees (list): List of employees associated with the project.
     """
 
-    def __init__(self, project_id, name, description, start_date, end_date):
+    def __init__(self, project_id: str, name: str, description: str, start_date: str, end_date: str):
         """
         Initialize a Project object.
 
@@ -28,7 +28,13 @@ class Project:
             start_date (str): The start date of the project.
             end_date (str): The end date of the project.
         """
-        pass
+        self.project_id = project_id
+        self.name = name
+        self.description = description
+        self.start_date = start_date
+        self.end_date = end_date
+        self.employees = []
+
 
     def assign_employee(self, employee):
         """
@@ -37,4 +43,4 @@ class Project:
         Args:
             employee (Employee): The employee to be assigned to the project.
         """
-        pass
+        self.employees.append(employee) 
