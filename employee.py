@@ -15,7 +15,7 @@ class Employee:
         salary (float): The salary of the employee.
     """
 
-    def __init__(self, name, emp_id, role, salary):
+    def __init__(self, name: str, emp_id: str, role: str, salary: float):
         """
         Initialize an Employee object.
 
@@ -25,4 +25,8 @@ class Employee:
             role (str): The role of the employee.
             salary (float): The salary of the employee.
         """
-        pass
+        self.name = name 
+        self.emp_id = emp_id
+        self.role = role 
+        self.salary = salary 
+
